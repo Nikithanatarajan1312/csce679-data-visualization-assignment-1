@@ -11,9 +11,15 @@ https://nikithanatarajan1312.github.io/csce679-data-visualization-assignment-1/
 ## 📸 Preview
 
 <p align="center">
-  <img src="images/max-mode.png" width="30%"/>
-  <img src="images/min-mode.png" width="30%"/>
-  <img src="images/year-selection.png" width="30%"/>
+  <img src="images/max-mode.png" width="900">
+</p>
+
+<p align="center">
+  <img src="images/min-mode.png" width="900">
+</p>
+
+<p align="center">
+  <img src="images/year-selection.png" width="900">
 </p>
 
 ---
