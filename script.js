@@ -417,3 +417,22 @@ if (downloadBtn) {
     img.src = url;
   });
 }
+
+
+window.addEventListener("load", () => {
+  const themeBtn = document.getElementById("themeToggle");
+  if (!themeBtn) return;
+
+  themeBtn.addEventListener("click", (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+
+    document.body.classList.toggle("dark-mode");
+
+    themeBtn.textContent = document.body.classList.contains("dark-mode")
+      ? "☀️ Light Mode"
+      : "🌙 Dark Mode";
+
+    console.log("dark mode now:", document.body.classList.contains("dark-mode"));
+  });
+});
