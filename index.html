@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HK Monthly Temperature Matrix</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:,">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <h1 id="title">Hong Kong Monthly Temperature (Last 10 Years)</h1>
+    <button id="downloadBtn">Download PNG</button>
+<div class="hint">
+  Click anywhere on the matrix to toggle: <span id="modeLabel">MAX</span>
+</div>
+    <div class="controls">
+  <label>From
+    <select id="startYear"></select>
+  </label>
+
+  <label>To
+    <select id="endYear"></select>
+  </label>
+
+  <button id="resetBtn" type="button">Last 10 years</button>
+</div>
+
+  </header>
+
+  <main>
+    <div id="chart"></div>
+  </main>
+
+  <div id="tooltip" class="tooltip" style="opacity:0;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  margin: 0;
+  background: #fff;
+  color: #111;
+}
+
+.topbar{
+  padding: 14px 18px;
+  border-bottom: 1px solid #eee;
+  display:flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+}
+
+#chart{
+  padding: 18px;
+}
+
+.tooltip{
+  position: absolute;
+  pointer-events: none;
+  background: rgba(20,20,20,0.95);
+  color: #fff;
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 1.25;
+  max-width: 220px;
+}
+
+.axis text{
+  font-size: 12px;
+}
+
+.legend text{
+  font-size: 12px;
+}
+
+.cell{
+  cursor: pointer;
+}
+
+.sparkline path{
+  fill: none;
+  stroke-width: 1.25px;
+  opacity: 0.95;
+}
+
+.sparkline .minLine{ stroke: #67c8ff; }
+.sparkline .maxLine{ stroke: #41d17a; }
+
+.controls{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-size: 13px;
+}
+
+.controls select, .controls button{
+  padding: 4px 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: #fff;
+}
+.controls button{
+  cursor:pointer;
+}
