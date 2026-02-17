@@ -67,3 +67,42 @@ body{
 .controls button{
   cursor:pointer;
 }
+
+/* Dark mode background + chart area */
+body.dark-mode {
+  background: #0f1117;
+  color: #e6edf3;
+}
+
+body.dark-mode #chart {
+  background: #0b0d12;
+}
+
+/* SVG text (axis labels + legend labels) */
+body.dark-mode svg text {
+  fill: #e6edf3;
+}
+
+/* SVG axis strokes */
+body.dark-mode .axis path,
+body.dark-mode .axis line {
+  stroke: #6b7280;
+}
+
+/* Optional: cell borders look nicer in dark */
+body.dark-mode .cell {
+  stroke: rgba(255,255,255,0.18);
+}
+body.dark-mode .cell {
+  stroke: rgba(255,255,255,0.15);
+}
+
+body.dark-mode .cell[fill="#f3f3f3"] {
+  fill: #1f2630;
+}
+body {
+  transition: background 0.25s ease, color 0.25s ease;
+}
+body.dark-mode #chart {
+  background: #0f1117;
+}
